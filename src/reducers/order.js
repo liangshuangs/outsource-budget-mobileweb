@@ -7,7 +7,6 @@ const order = {
     info :{}
 }
 function getOrderInfo(state, action) {
-    console.log(action)
     return {...state, info:{...action.response.staffInfo}}
 }
 function getApplayProInfo(state, action) {

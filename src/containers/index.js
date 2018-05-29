@@ -6,8 +6,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import Order from './order'
-import NoPro from '../components/applyOrderNoPro/index'
-import Pro from '../components/applyOrderPro/index'
+import NoPro from './applyNoPro'
+import Pro from './applyPro'
 import Budget from '../components/budget/index'
 import {getOrderInfo,getApplayProInfo,getApplayNoProInfo} from '../action/order'
 import '../assets/css/normalize.css'
@@ -39,7 +39,7 @@ class Container extends React.Component {
                     <Route exact path="/" component={Order} />
                     <Route path="/order" component={Order} />
                     <Route path="/applynopro" component={NoPro} />
-                    <Route path="/applypro" component={Pro} />
+                    <Route path="/applyPro" component={Pro} />
                     <Route path="/budget" component={Budget} />
                 </Switch>
             </Router>

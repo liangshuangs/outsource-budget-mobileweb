@@ -17,13 +17,27 @@ const mapDispatchToProps = dispatch => (
     }, dispatch)
 );
 class ApplyNoPro extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            orderInfo:[]
+        }
+    }
     componentWillMount() {
-        let applicationId = '12C094E7044F41EBB2E6BEA450DFD559'
-        this.props.getApplayNoProInfo(applicationId)
+       // let applicationId = '01d75389-ca03-40c2-86af-b58cb27ec778'
+        let applicationId = 'D7ABDAA143B64F969136921A51508074'
+        this.props.getApplayNoProInfo(applicationId).then((res)=>{
+            if (res && res.response && res.response[0].success === true) {
+                let Data = JSON.parse(res.response[0].data)
+                this.setState({
+                    orderInfo:Data
+                })
+            }
+        })
     }
     render() {
         return (
-            <ApplyNoProCom {...this.props}/>
+            <ApplyNoProCom data={this.state.orderInfo}/>
         )
     }
 }

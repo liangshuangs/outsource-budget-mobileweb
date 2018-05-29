@@ -36,6 +36,7 @@ export default class Component extends React.Component {
         })
     }
     render() {
+        let data = this.props.data
         const navTitle = ['基本信息','技术合作支付信息']
         return (
             <div className="wrap index clearfix">
@@ -44,7 +45,7 @@ export default class Component extends React.Component {
                 <div className="main">
                     <div className="body scroll f-bt">
                         {
-                            this.state.selectIndex === '基本信息' ? <BaseInfo /> : <PayInfo />
+                            this.state.selectIndex === '基本信息'? <BaseInfo data={this.props.data} /> : <PayInfo data={this.props.data} />
                         }
                     </div>
                     <ApproveRemark />

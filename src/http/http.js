@@ -46,7 +46,6 @@ const requestApi = (url,options) => {
     const fetchPromise = async () => {
         try {
             const res = await fetch(uri,opt)
-            console.log(res)
             if (res.status === 401) {
                 // 刷新token
             }

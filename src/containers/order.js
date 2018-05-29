@@ -17,13 +17,26 @@ const mapDispatchToProps = dispatch => (
     }, dispatch)
 );
 class Order extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            orderInfo:[]
+        }
+    }
     componentWillMount() {
         let applicationId = '12C094E7044F41EBB2E6BEA450DFD559'
-        this.props.getOrderInfo(applicationId)
+        this.props.getOrderInfo(applicationId).then((res)=>{
+            if (res && res.response && res.response[0].success === true) {
+                let Data = JSON.parse(res.response[0].data)
+                this.setState({
+                    orderInfo:Data
+                })
+            }
+        })
     }
     render() {
         return (
-            <OrderCom {...this.props}/>
+            <OrderCom data={this.state.orderInfo}/>
         )
     }
 }
