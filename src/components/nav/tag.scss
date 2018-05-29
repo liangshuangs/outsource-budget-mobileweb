@@ -1,0 +1,44 @@
+
+$height:110px;
+$text-color:#373737;
+$them-color:#ff8928;
+.nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: $height;
+  line-height: $height;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top:49PX;
+  background-color: #fff;
+  font-size: 42px;
+  li{
+    flex: 1;
+    text-align: center;
+    color:$text-color;
+    overflow: hidden;
+    position: relative;
+  }
+  .nav-active{
+    color:$them-color;
+  }
+  .nav-active::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 15%;
+    height: 1PX;
+    background-color:  $them-color;
+  }
+}
+.ios .nav {
+  top:67PX;
+}
+.iosx .nav {
+  top:89PX;
+}
