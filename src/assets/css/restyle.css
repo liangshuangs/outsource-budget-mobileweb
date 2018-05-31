@@ -68,7 +68,7 @@ a {
 .main {
   position: relative;
   height: 100%;
-  padding-bottom: 511px;
+  padding-bottom: 150px;
 }
 
 .main.flexsearch {

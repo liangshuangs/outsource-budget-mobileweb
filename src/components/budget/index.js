@@ -47,16 +47,14 @@ export default class Component extends React.Component {
                             urlParms==='change' ? <BudgetChange /> : <BugetApprove />
                         }
                     </div>
-                    <ApproveRemark />
-
                     {
                         this.state.modalFlag ?
                             <Modal>
                                 <div className="modal-panel">
                                     <div className="modal-body">
-                                        <p className="modal-info">
-                                            是否确定"{this.state.modalInfo}"？
-                                        </p>
+                                        <textarea className="modal-info modal-text" placeholder="请输入审批意见，如无意见请按确定">
+
+                                        </textarea>
                                     </div>
                                     <div className="modal-footer">
                                         <a className="cancel" onClick={this.cancel}>取消</a>

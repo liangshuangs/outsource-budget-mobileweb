@@ -8,7 +8,7 @@ function env() {
         return {
             ENV:'development',
             ROOT_PATH:'/mobileapps/kara-ticket-booking-mobileweb',
-            GATEWAY:'http://10.21.6.26:7001/AIOMS/ajax/query',
+            GATEWAY:'http://10.21.6.26:7001/AIOMS',
             BAOKU:'http://apics.baoku.com/open/api/login/oaLogin',
         }
     }else if (env === 'test') {
@@ -24,7 +24,7 @@ function env() {
         return {
             ENV:'production',
             ROOT_PATH:'/mobileapps/kara-ticket-booking-mobileweb',
-            GATEWAY:'https://ims.asiainfo.com/AIOMS/ajax/query',
+            GATEWAY:'https://ims.asiainfo.com/AIOMS',
             BAOKU:'http://openapi.baoku.com/open/api/login/oaLogin',
         }
     }

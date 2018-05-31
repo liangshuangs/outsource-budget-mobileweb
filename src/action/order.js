@@ -7,7 +7,7 @@ import { httpApi } from '../http/http'
 export function getOrderInfo(param) {
     return {
         [httpApi]: {
-            url: `/queryManager_getXINorderDetail.action?applicationId=${param}`,
+            url: `/ajax/query/queryManager_getXINorderDetail.action?applicationId=${param}`,
             options: {
                 method: 'GET',
             },
@@ -19,7 +19,7 @@ export function getOrderInfo(param) {
 export function getApplayProInfo(param) {
     return {
         [httpApi]: {
-            url: `/queryManager_getXINapplyProDetail.action?applicationId=${param}`,
+            url: `/ajax/query/queryManager_getXINapplyProDetail.action?applicationId=${param}`,
             options: {
                 method: 'GET',
             },
@@ -31,11 +31,35 @@ export function getApplayProInfo(param) {
 export function getApplayNoProInfo(param) {
     return {
             [httpApi]: {
-            url: `/queryManager_getXINapplyNoProDetail.action?applicationId=${param}`,
+            url: `/ajax/query/queryManager_getXINapplyNoProDetail.action?applicationId=${param}`,
             options: {
                 method: 'GET',
             },
             types: ['GET_APPLYNOPRO_INFO_SUCCESS'],
+        },
+    }
+}
+// 获取同意驳回url
+export function getUrl(targetTaskId) {
+    return {
+        [httpApi]: {
+            url: `/ajax/query/queryManager_getXINurlOpt.action?targetTaskId=${targetTaskId}`,
+            options: {
+                method: 'GET',
+            },
+            types: ['GET_URL_SUCCESS'],
+        },
+    }
+}
+// 同意／驳回接口
+export function approve(params) {
+    return {
+        [httpApi]: {
+            url: `/ajaxOA/approve_doApprove.action?${params}`,
+            options: {
+                method: 'GET',
+            },
+            types: ['GET_APPROVE_SUCCESS'],
         },
     }
 }

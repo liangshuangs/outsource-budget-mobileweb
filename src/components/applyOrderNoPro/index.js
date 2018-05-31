@@ -50,15 +50,14 @@ export default class Component extends React.Component {
                             this.state.selectIndex === '基本信息' ? <BaseInfo data={this.props.data} /> : (this.state.selectIndex === '合作种类、成本、利润' ? <TeamClass data={this.props.data} /> : <TechTeam data={this.props.data} />)
                         }
                     </div>
-                    <ApproveRemark />
                     {
                         this.state.modalFlag ?
                             <Modal>
                                 <div className="modal-panel">
                                     <div className="modal-body">
-                                        <p className="modal-info">
-                                            是否确定"{this.state.modalTitle}"？
-                                        </p>
+                                        <textarea className="modal-info modal-text" placeholder="请输入审批意见，如无意见请按确定">
+
+                                        </textarea>
                                     </div>
                                     <div className="modal-footer">
                                         <a className="cancel" onClick={this.cancel}>取消</a>

@@ -15,7 +15,8 @@ export default class Component extends React.Component {
         super(props)
         this.state = {
             selectIndex:'基本信息',
-            modalTitle:'',
+            modalInfo:'',
+            type:'',
             modalFlag:false,
         }
     }
@@ -25,14 +26,44 @@ export default class Component extends React.Component {
         })
     }
     handleConfrimClick = (type) => {
+        console.log(type)
         this.setState({
-            modalTitle:type,
-            modalFlag:true
+            modalFlag:true,
+            type:type
         })
+    }
+    confrimClick = () => {
+        let type = this.state.type
+        let param = this._geturlPram(type)
+        this.props.approve(param)
+        this.cancel()
+    }
+    _geturlPram = (type) => {
+        let options = this.state.modalInfo ? this.state.modalInfo : ''
+        let url = this.props.url[0]
+        let acceptBtnUrlPrams = ''
+        if (type ==="同意") {
+            acceptBtnUrlPrams = url.acceptBtnUrl.split('?')[1]
+        }
+        if (type ==="驳回") {
+            acceptBtnUrlPrams = url.rejectBtnUrl.split('?')[1]
+        }
+
+        acceptBtnUrlPrams = `${acceptBtnUrlPrams}&rejectReason=${options}`
+        console.log(acceptBtnUrlPrams)
+        return acceptBtnUrlPrams
     }
     cancel = () => {
         this.setState({
-            modalFlag:false
+            modalFlag:false,
+            modalInfo:'',
+            type:''
+        })
+    }
+    changetText = (e) => {
+        let info = e.target.value
+        this.setState({
+            modalInfo:info
         })
     }
     render() {
@@ -48,24 +79,21 @@ export default class Component extends React.Component {
                             this.state.selectIndex === '基本信息'? <BaseInfo data={this.props.data} /> : <PayInfo data={this.props.data} />
                         }
                     </div>
-                    <ApproveRemark />
                     {
                         this.state.modalFlag ?
                             <Modal>
                                 <div className="modal-panel">
                                     <div className="modal-body">
-                                        <p className="modal-info">
-                                            是否确定"{this.state.modalTitle}"？
-                                        </p>
+                                        <textarea className="modal-info modal-text" placeholder="请输入审批意见，如无意见请按确定" onChange={(e)=>this.changetText(e)}>
+                                        </textarea>
                                     </div>
                                     <div className="modal-footer">
                                         <a className="cancel" onClick={this.cancel}>取消</a>
-                                        <a onClick={this.cancel}>确定</a>
+                                        <a onClick={this.confrimClick}>确定</a>
                                     </div>
                                 </div>
                             </Modal> : null
                     }
-
                     <Footer confirmClick={this.handleConfrimClick}/>
                 </div>
             </div>
