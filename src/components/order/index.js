@@ -9,6 +9,7 @@ import BaseInfo from './baseInfo'
 import PayInfo from './payInfo'
 import Modal from '../modal/modal'
 import ApproveRemark from '../approveRemark/approveRemark'
+import {mixins} from '../../mixin/text'
 
 export default class Component extends React.Component {
     constructor(props) {
@@ -26,7 +27,6 @@ export default class Component extends React.Component {
         })
     }
     handleConfrimClick = (type) => {
-        console.log(type)
         this.setState({
             modalFlag:true,
             type:type
@@ -48,9 +48,7 @@ export default class Component extends React.Component {
         if (type ==="驳回") {
             acceptBtnUrlPrams = url.rejectBtnUrl.split('?')[1]
         }
-
         acceptBtnUrlPrams = `${acceptBtnUrlPrams}&rejectReason=${options}`
-        console.log(acceptBtnUrlPrams)
         return acceptBtnUrlPrams
     }
     cancel = () => {

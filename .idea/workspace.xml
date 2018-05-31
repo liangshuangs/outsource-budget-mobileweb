@@ -15,42 +15,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="103" column="46" lean-forward="false" selection-start-line="103" selection-start-column="46" selection-end-line="103" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/order.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/order/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="62">
+              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
-                <marker date="1527753359000" expanded="true" signature="1966:3366" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2083:3360" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2122:3347" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2177:2392" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2497:3226" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2559:3189" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2624:2871" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2755:2828" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="2938:3150" ph="..." />
-                <marker date="1527753359000" expanded="true" signature="3324:3341" ph="..." />
+                <element signature="e#46#71#0" expanded="true" />
+                <marker date="1527756979000" expanded="true" signature="1940:3340" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2057:3334" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2096:3321" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2151:2366" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2471:3200" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2533:3163" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2598:2845" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2729:2802" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="2912:3124" ph="..." />
+                <marker date="1527756979000" expanded="true" signature="3298:3315" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mixin/text.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc;n#mixins#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -112,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/ConfirmModal/comfirmModal.js" />
         <option value="$PROJECT_DIR$/src/components/ConfirmModal/modal.scss" />
         <option value="$PROJECT_DIR$/src/components/Header/header.js" />
         <option value="$PROJECT_DIR$/src/components/Home/payInfo.scss" />
@@ -140,9 +132,7 @@
         <option value="$PROJECT_DIR$/src/components/nav/tag.scss" />
         <option value="$PROJECT_DIR$/src/http/http.js" />
         <option value="$PROJECT_DIR$/src/containers/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/applyPro.js" />
         <option value="$PROJECT_DIR$/src/components/applyOrderPro/techTeam.js" />
-        <option value="$PROJECT_DIR$/src/containers/applyNoPro.js" />
         <option value="$PROJECT_DIR$/src/components/order/payInfo.scss" />
         <option value="$PROJECT_DIR$/src/components/order/baseInfo.js" />
         <option value="$PROJECT_DIR$/src/components/applyOrderNoPro/baseInfo.js" />
@@ -153,16 +143,19 @@
         <option value="$PROJECT_DIR$/src/reducers/order.js" />
         <option value="$PROJECT_DIR$/src/components/footer/footer.scss" />
         <option value="$PROJECT_DIR$/src/components/footer/footer.js" />
-        <option value="$PROJECT_DIR$/src/components/applyOrderNoPro/index.js" />
-        <option value="$PROJECT_DIR$/src/components/applyOrderPro/index.js" />
         <option value="$PROJECT_DIR$/src/components/budget/index.js" />
         <option value="$PROJECT_DIR$/src/components/modal/modal.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/restyle.css" />
         <option value="$PROJECT_DIR$/src/config/env.js" />
         <option value="$PROJECT_DIR$/src/action/order.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/order/index.js" />
         <option value="$PROJECT_DIR$/src/containers/order.js" />
+        <option value="$PROJECT_DIR$/src/components/applyOrderPro/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/applyPro.js" />
+        <option value="$PROJECT_DIR$/src/containers/applyNoPro.js" />
+        <option value="$PROJECT_DIR$/src/components/applyOrderNoPro/index.js" />
+        <option value="$PROJECT_DIR$/src/mixin/text.js" />
+        <option value="$PROJECT_DIR$/src/components/order/index.js" />
       </list>
     </option>
   </component>
@@ -220,64 +213,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outsource-budget-mobileweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outsource-budget-mobileweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outsource-budget-mobileweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outsource-budget-mobileweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="order" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outsource-budget-mobileweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outsource-budget-mobileweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,25 +377,25 @@
       <workItem from="1527646531943" duration="781000" />
       <workItem from="1527668196347" duration="3363000" />
       <workItem from="1527744463982" duration="3678000" />
-      <workItem from="1527752455515" duration="1030000" />
+      <workItem from="1527752455515" duration="4577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101163000" />
+    <option name="totallyTimeSpent" value="104710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="636" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416997" sideWeight="0.7227723" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41143766" sideWeight="0.7227723" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05019305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05019305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25416997" sideWeight="0.27722773" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3146718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13127413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -504,7 +439,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Home/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/baseInfo.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/payInfo.scss" />
     <entry file="file://$PROJECT_DIR$/src/components/nav/tag.js">
@@ -616,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/applyNoPro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -699,6 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,22 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/applyOrderNoPro/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="59" column="51" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="59" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/applyOrderPro/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="59" column="51" lean-forward="false" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/budget/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -767,6 +679,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,21 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/applyPro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -833,30 +731,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/order/index.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="585">
+          <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="42" />
           <folding>
-            <marker date="1527753359000" expanded="true" signature="1966:3366" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2083:3360" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2122:3347" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2177:2392" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2497:3226" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2559:3189" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2624:2871" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2755:2828" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="2938:3150" ph="..." />
-            <marker date="1527753359000" expanded="true" signature="3324:3341" ph="..." />
+            <element signature="e#46#72#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/applyPro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#46#71#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+        <state relative-caret-position="177">
+          <caret line="63" column="99" lean-forward="false" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="99" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/applyOrderPro/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="92" column="69" lean-forward="false" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/applyOrderNoPro/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="93" column="69" lean-forward="false" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/applyNoPro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="62" column="104" lean-forward="false" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="104" />
+          <folding>
+            <element signature="e#46#71#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mixin/text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#mixins#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/order/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+            <marker date="1527756979000" expanded="true" signature="1940:3340" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2057:3334" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2096:3321" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2151:2366" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2471:3200" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2533:3163" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2598:2845" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2729:2802" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="2912:3124" ph="..." />
+            <marker date="1527756979000" expanded="true" signature="3298:3315" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

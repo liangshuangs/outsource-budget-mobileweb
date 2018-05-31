@@ -27,7 +27,20 @@ class Order extends React.Component {
         }
     }
     componentWillMount() {
-        let applicationId = '12C094E7044F41EBB2E6BEA450DFD559'
+        let applicationId = ''
+        let targetTaskId = ''
+        let quarms = window.location.search
+        let quarmsArr = quarms.split("?")[1].split("&")
+        quarmsArr.map(item=>{
+            let itemArr = item.split("=")
+            if (itemArr[0] === "applicationId") {
+                applicationId = itemArr[1]
+            }
+            if (itemArr[0] === "targetTaskId") {
+                targetTaskId = itemArr[1]
+            }
+        })
+        //applicationId = '12C094E7044F41EBB2E6BEA450DFD559'
         this.props.getOrderInfo(applicationId).then((res)=>{
             if (res && res.response && res.response[0].success === true) {
                 let Data = JSON.parse(res.response[0].data)
@@ -36,7 +49,7 @@ class Order extends React.Component {
                 })
             }
         })
-        let targetTaskId = '74878639FE554A348C3AA1A311D905C2'
+       // targetTaskId = '74878639FE554A348C3AA1A311D905C2'
         this.props.getUrl(targetTaskId).then(res=>{
             if (res && res.response && res.response[0].success === true) {
                 let url = JSON.parse(res.response[0].data)
