@@ -8,8 +8,9 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 import Order from './order'
 import NoPro from './applyNoPro'
 import Pro from './applyPro'
-import Budget from '../components/budget/index'
-import {getOrderInfo,getApplayProInfo,getApplayNoProInfo} from '../action/order'
+import Budget from './budget'
+import Tost from '../components/tost/tost'
+import {getOrderInfo,getApplayProInfo,getApplayNoProInfo,getUserInfo} from '../action/order'
 import '../assets/css/normalize.css'
 import '../assets/css/restyle.css'
 import '../assets/iconfont/iconfont.css'
@@ -23,7 +24,8 @@ const mapDispatchToProps = dispatch => (
     bindActionCreators({
         getOrderInfo,
         getApplayProInfo,
-        getApplayNoProInfo
+        getApplayNoProInfo,
+        getUserInfo
     }, dispatch)
 );
 
@@ -32,6 +34,17 @@ class Container extends React.Component {
         super(props)
         this.state = {}
     }
+    componentWillMount() {
+        // 获取用户信息
+        /*this.props.getUserInfo().then(res=>{
+         if(res && res.response && res.response.resultCode === '000000' && res.response.staffInfo && res.response.staffInfo.companyId ) {
+         console.log('user',res.response)
+         }else{
+         Tost({msg: '获取用户信息出错', time: 10})
+         }
+         })*/
+    }
+
     render() {
         return (
             <Router>

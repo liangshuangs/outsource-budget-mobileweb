@@ -8,8 +8,9 @@ import Nav from '../nav/tag'
 import BaseInfo from './baseInfo'
 import PayInfo from './payInfo'
 import Modal from '../modal/modal'
+import mixin from '../../mixin/decorator'
 import ApproveRemark from '../approveRemark/approveRemark'
-import {mixins} from '../../mixin/text'
+import {mixins} from '../../mixin/decorator'
 
 export default class Component extends React.Component {
     constructor(props) {
@@ -42,12 +43,17 @@ export default class Component extends React.Component {
         let options = this.state.modalInfo ? this.state.modalInfo : ''
         let url = this.props.url[0]
         let acceptBtnUrlPrams = ''
-        if (type ==="同意") {
-            acceptBtnUrlPrams = url.acceptBtnUrl.split('?')[1]
+        if (url && url.hasOwnProperty("acceptBtnUrl") && url.hasOwnProperty("rejectBtnUrl")) {
+            if (type ==="同意") {
+                acceptBtnUrlPrams = url.acceptBtnUrl.split('?')[1]
+            }
+            if (type ==="驳回") {
+                acceptBtnUrlPrams = url.rejectBtnUrl.split('?')[1]
+            }
+        }else {
+            console.log('获取URL失败')
         }
-        if (type ==="驳回") {
-            acceptBtnUrlPrams = url.rejectBtnUrl.split('?')[1]
-        }
+
         acceptBtnUrlPrams = `${acceptBtnUrlPrams}&rejectReason=${options}`
         return acceptBtnUrlPrams
     }

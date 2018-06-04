@@ -36,16 +36,17 @@ export default class Component extends React.Component {
     }
     render() {
 
-        const urlParms = this.props.match.params && this.props.match.params.item
-        const headerTitle = urlParms==='change' ? '预算变更' : '预算申请'
+        //const urlParms = this.props.match.params && this.props.match.params.item
+        //const headerTitle = urlParms==='change' ? '预算变更' : '预算申请'
         return (
             <div className="wrap index clearfix budget">
-               <Header title={headerTitle} />
+               <Header title="预算申请" />
                 <div className="main">
                     <div className="body scroll f-bt">
-                        {
+                        {/*{
                             urlParms==='change' ? <BudgetChange /> : <BugetApprove />
-                        }
+                        }*/}
+                        <BugetApprove />
                     </div>
                     {
                         this.state.modalFlag ?

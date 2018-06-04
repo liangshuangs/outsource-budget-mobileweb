@@ -2,12 +2,23 @@
  * Created by liangshuang on 18/5/28.
  */
 import { httpApi } from '../http/http'
+export function getUserInfo () {
+    return {
+        [httpApi]:{
+            url: '/api/v1.0.0/sdm/getCurrentStaff',
+            options:{
+                method: 'GET',
+            },
+            types: ['GET_USER_INFO_SUCCESS', 'GET_USER_INFO_REQUEST', 'GET_USER_INFO_FAILURE', 'NETWORK_FAILURE']
 
+        }
+    }
+}
 // 获取订单详情
 export function getOrderInfo(param) {
     return {
         [httpApi]: {
-            url: `/ajax/query/queryManager_getXINorderDetail.action?applicationId=${param}`,
+            url: `/api/v1.0.0/AIOMS/ajax/query/queryManager_getXINorderDetail.action?applicationId=${param}`,
             options: {
                 method: 'GET',
             },
@@ -19,7 +30,7 @@ export function getOrderInfo(param) {
 export function getApplayProInfo(param) {
     return {
         [httpApi]: {
-            url: `/ajax/query/queryManager_getXINapplyProDetail.action?applicationId=${param}`,
+            url: `/api/v1.0.0/AIOMS/ajax/query/queryManager_getXINapplyProDetail.action?applicationId=${param}`,
             options: {
                 method: 'GET',
             },
@@ -31,7 +42,7 @@ export function getApplayProInfo(param) {
 export function getApplayNoProInfo(param) {
     return {
             [httpApi]: {
-            url: `/ajax/query/queryManager_getXINapplyNoProDetail.action?applicationId=${param}`,
+            url: `/api/v1.0.0/AIOMS/ajax/query/queryManager_getXINapplyNoProDetail.action?applicationId=${param}`,
             options: {
                 method: 'GET',
             },
@@ -43,7 +54,7 @@ export function getApplayNoProInfo(param) {
 export function getUrl(targetTaskId) {
     return {
         [httpApi]: {
-            url: `/ajax/query/queryManager_getXINurlOpt.action?targetTaskId=${targetTaskId}`,
+            url: `/api/v1.0.0/AIOMS/ajax/query/queryManager_getXINurlOpt.action?targetTaskId=${targetTaskId}`,
             options: {
                 method: 'GET',
             },
@@ -55,11 +66,36 @@ export function getUrl(targetTaskId) {
 export function approve(params) {
     return {
         [httpApi]: {
-            url: `/ajaxOA/approve_doApprove.action?${params}`,
+            url: `/api/v1.0.0/AIOMS/ajaxOA/approve_doApprove.action?${params}`,
             options: {
                 method: 'GET',
             },
             types: ['GET_APPROVE_SUCCESS'],
+        },
+    }
+}
+// 获取服务器时间
+export function getBudgetServerTime() {
+    return {
+        [httpApi]: {
+            url: `/BudgetNew/budget/projResourceHttp_getBudgetServerTime`,
+            options: {
+                method: 'GET',
+            },
+            types: ['GET_TIME_SUCCESS'],
+        },
+    }
+}
+// 获取预算详情
+export function getBudgetInfo(params) {
+    console.log(params)
+    return {
+        [httpApi]: {
+            url: `/BudgetNew/budget/mobileHttp_queryAuditInfo?${params}`,
+            options: {
+                method: 'GET',
+            },
+            types: ['GET_BUDGETINFO_SUCCESS'],
         },
     }
 }
