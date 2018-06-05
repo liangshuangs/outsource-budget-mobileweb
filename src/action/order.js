@@ -78,7 +78,7 @@ export function approve(params) {
 export function getBudgetServerTime() {
     return {
         [httpApi]: {
-            url: `/BudgetNew/budget/projResourceHttp_getBudgetServerTime`,
+            url: `/BudgetNew/budget/mobileHttp_getBudgetServerTime`,
             options: {
                 method: 'GET',
             },

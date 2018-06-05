@@ -4,13 +4,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
-import Order from './order'
-import NoPro from './applyNoPro'
-import Pro from './applyPro'
-import Budget from './budget'
-import Tost from '../components/tost/tost'
-import {getOrderInfo,getApplayProInfo,getApplayNoProInfo,getUserInfo} from '../action/order'
+import IndexCom from '../components/index/index'
+import {getOrderInfo,getApplayProInfo,getApplayNoProInfo,getUserInfo,getUrl,approve} from '../action/order'
 import '../assets/css/normalize.css'
 import '../assets/css/restyle.css'
 import '../assets/iconfont/iconfont.css'
@@ -25,38 +20,75 @@ const mapDispatchToProps = dispatch => (
         getOrderInfo,
         getApplayProInfo,
         getApplayNoProInfo,
-        getUserInfo
+        getUserInfo,
+        getUrl,
+        approve
     }, dispatch)
 );
 
 class Container extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            data:[],
+            url:[],
+            loading:true
+        }
     }
     componentWillMount() {
-        // 获取用户信息
-        /*this.props.getUserInfo().then(res=>{
-         if(res && res.response && res.response.resultCode === '000000' && res.response.staffInfo && res.response.staffInfo.companyId ) {
-         console.log('user',res.response)
-         }else{
-         Tost({msg: '获取用户信息出错', time: 10})
-         }
-         })*/
+        let applicationId = ''
+        let targetTaskId = ''
+        let postUrl = this.props.getOrderInfo
+        let quarms = window.location.search
+        if (quarms && quarms.includes('?') && quarms.includes('&')) {
+            let quarmsArr = quarms.split("?")[1].split("&")
+            quarmsArr.map(item=>{
+                let itemArr = item.split("=")
+                if (itemArr[0] === "applicationId") {
+                    applicationId = itemArr[1]
+                }
+                if (itemArr[0] === "targetTaskId") {
+                    targetTaskId = itemArr[1]
+                }
+            })
+        }
+        let path = window.location.pathname
+        if (path === '/order' ||path === '/') {
+            postUrl = this.props.getOrderInfo
+        }
+        if (path === '/applypro') {
+            postUrl = this.props.getApplayProInfo
+        }
+        if (path === '/applynopro') {
+            postUrl = this.props.getApplayNoProInfo
+        }
+        //获取详情
+        postUrl(applicationId).then((res)=>{
+            if (res && res.response && res.response[0].success === true) {
+                let dataList = JSON.parse(res.response[0].data)
+                console.log(dataList)
+                this.setState({
+                    data:dataList
+                })
+            }
+            this.setState({
+                loading:false
+            })
+        })
+        //获取URL
+        this.props.getUrl(targetTaskId).then(res=>{
+            if (res && res.response && res.response[0].success === true) {
+                let url = JSON.parse(res.response[0].data)
+                this.setState({
+                    url:url
+                })
+            }
+        })
     }
 
     render() {
         return (
-            <Router>
-                <Switch>
-                    <Route exact path="/" component={Order} />
-                    <Route path="/order" component={Order} />
-                    <Route path="/applynopro" component={NoPro} />
-                    <Route path="/applyPro" component={Pro} />
-                    <Route path="/budget" component={Budget} />
-                </Switch>
-            </Router>
-
+            <IndexCom data={this.state.data} url={this.state.url} approve={this.props.approve} loading={this.state.loading}/>
         )
     }
 }

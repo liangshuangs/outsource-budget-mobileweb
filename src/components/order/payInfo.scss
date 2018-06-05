@@ -23,44 +23,56 @@ $height: 130px;
     padding: 45px 50px 0 50px;
     text-align: right;
   }
+  .item {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    font-size: 42px;
+    span {
+      display: inline-block;
+      text-align: left;
+    }
+    .remark-title,.approve-title {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .title{
+      display: inline;
+      flex-wrap: nowrap;
+      color:#373737;
+      min-width: 250px;
+    }
+    .desc {
+      display: inline-block;
+      overflow: hidden;
+      color:#666666;
+      line-height: 60px;
+    }
+    .approve-remark {
+      display: block;
+      text-align: left;
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+  }
+}
+.hiddren {
+  display: none;
+}
+.show{
+  display: block;
 }
 
-.item {
-  display: flex;
-  padding: 0 50px;
-  justify-content: space-between;
-  font-size: 42px;
-  span {
-    display: inline-block;
-    text-align: left;
-  }
-  .remark-title,.approve-title {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  .title{
-    display: inline;
-    flex-wrap: nowrap;
-    color:#373737;
-    min-width: 250px;
+.remark-container {
+  padding: 44px 0;
+  background-color: #fff;
+  .item{
+    padding: 0 50px;
+    font-size: 42px;
   }
   .desc {
-    display: inline-block;
-    overflow: hidden;
-    color:#666666;
-    line-height: 60px;
-  }
-  .approve-remark {
-    display: block;
-    text-align: left;
-    width: 100%;
-    outline: none;
-    border: none;
-  }
-}
-.remark-container {
-  padding: 0 50px;
-  .remark-desc {
+    display: table;
     outline: none;
     width: 100%;
     margin-top: 20px;

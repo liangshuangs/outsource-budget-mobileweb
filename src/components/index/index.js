@@ -7,7 +7,8 @@ import Footer from '../footer/footer'
 import Nav from '../nav/tag'
 import Modal from '../modal/modal'
 import Item from '../common/item'
-import {orderBaseColumns,orderPayInfoColumns} from '../common/columns'
+import {applyProNav,orderNav} from '../common/navTitle'
+import {orderBaseColumns,orderPayInfoColumns,OrderProBaseColumns,orderProClass1Columns,orderProClass2Columns,orderProTechColumns,OrderNoProBaseColumns} from '../common/columns'
 
 export default class Component extends React.Component {
     constructor(props) {
@@ -69,20 +70,55 @@ export default class Component extends React.Component {
     }
     render() {
         let data = this.props.data
-        const navTitle = ['基本信息','技术合作支付信息']
-        const columns = this.state.selectIndex === '基本信息' ? orderBaseColumns : orderPayInfoColumns
+        let columns = []
+        let navTitle = []
+        let path = window.location.pathname
+
+        if (path === '/order' ||path === '/') {
+            navTitle = orderNav
+            columns = this.state.selectIndex === '基本信息' ? orderBaseColumns : orderPayInfoColumns
+        }
+        if (path === '/applypro' || path === '/applynopro') {
+            navTitle = applyProNav
+            if (path === '/applypro') {
+                if (this.state.selectIndex === '基本信息') {
+                    columns =  OrderProBaseColumns
+                }
+                if (this.state.selectIndex === '合作种类、成本、利润') {
+                    columns =  data[0] &&data[0].technicalCooperationParent === '2' ? orderProClass2Columns : orderProClass1Columns
+                }
+                if (this.state.selectIndex === '技术合作商') {
+                    columns =  orderProTechColumns
+                }
+            }
+            if (path === '/applynopro') {
+                if (this.state.selectIndex === '基本信息') {
+                    columns =  OrderNoProBaseColumns
+                }
+                if (this.state.selectIndex === '合作种类、成本、利润') {
+                    columns =  data[0]&&data[0].technicalCooperationParent === '2' ? orderProClass2Columns : orderProClass1Columns
+                }
+                if (this.state.selectIndex === '技术合作商') {
+                    columns =  orderProTechColumns
+                }
+            }
+        }
         return (
             <div className="wrap index clearfix">
-               <Header title="技术合作订单" />
+                <Header title="技术合作订单" />
                 <Nav title = {navTitle} handleClick={this.handleNavClick}/>
                 <div className="main">
                     <div className="body scroll f-bt">
-                        { data.length > 0 ?
-                        <div>
-                            <Item data = {data}  columns = {columns}/>
-                        </div>
-                        : null
+                        {
+                            this.props.loading ?
+                                <div className="loading">loading</div>
+                                :  (data.length > 0 ?
+                                <div>
+                                    <Item data = {data[0]}  columns = {columns}/>
+                                </div>
+                                : null)
                         }
+
                     </div>
                     {
                         this.state.modalFlag ?

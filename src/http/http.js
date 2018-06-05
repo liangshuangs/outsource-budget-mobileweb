@@ -88,7 +88,7 @@ export default (catchError) => store => next => action => {
 
     return requestApi(url, options)
         .then((response) => {
-            if (response.success === true || response.result === '0000') {
+            if (response.success === true || response.result === "000000") {
                 return next(actionWith({
                     type: successType,
                     response,

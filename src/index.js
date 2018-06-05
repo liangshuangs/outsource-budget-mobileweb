@@ -7,7 +7,7 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 import http from './http/http'
-import Root from './containers/index'
+import Root from './router/index'
 import registerServiceWorker from './registerServiceWorker';
 import createHistory from 'history/createBrowserHistory'
 import reducers from './reducers/index'
@@ -28,14 +28,14 @@ function loader() {
     const store = createStore(reducers,enhancer)
     render(
         <Provider store={store}>
-            <Root history={history} />
+            <Root />
         </Provider>,
         document.getElementById('root'),
     )
     registerServiceWorker();
 }
 function bootstrap() {
-   // window.sessionStorage.setItem('token', 'Bearer mMXImvp8ruSKcAfpZzr4dywGlXtf9Txk')
+   window.sessionStorage.setItem('token', 'Bearer mMXImvp8ruSKcAfpZzr4dywGlXtf9Txk')
     if(env.ENV === 'development') {
         if (window.location.hash && window.location.hash.indexOf('access_token=') > -1) {
             window.sessionStorage.setItem('token', `Bearer ${window.location.hash.split('access_token=')[1].split('&')[0]}`)
