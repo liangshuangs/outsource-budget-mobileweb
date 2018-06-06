@@ -36,12 +36,10 @@ class Container extends React.Component {
         }
     }
     componentWillMount() {
-        let path = this.props.match.path
         let applicationId = ''
         let targetTaskId = ''
         let postUrl = this.props.getOrderInfo
         let quarms = window.location.search
-        console.log(quarms)
         if (quarms && quarms.includes('?') && quarms.includes('&')) {
             let quarmsArr = quarms.split("?")[1].split("&")
             quarmsArr.map(item=>{
@@ -54,17 +52,8 @@ class Container extends React.Component {
                 }
             })
         }
-        if (path === '/order' ||path === '/') {
-            postUrl = this.props.getOrderInfo
-        }
-        if (path === '/applypro') {
-            postUrl = this.props.getApplayProInfo
-        }
-        if (path === '/applynopro') {
-            postUrl = this.props.getApplayNoProInfo
-        }
         //获取详情
-        postUrl(applicationId).then((res)=>{
+        this.props.getOrderInfo(applicationId).then((res)=>{
             if (res && res.response && res.response[0].success === true) {
                 let dataList = JSON.parse(res.response[0].data)
                 this.setState({
@@ -88,7 +77,7 @@ class Container extends React.Component {
 
     render() {
         return (
-            <IndexCom data={this.state.data} url={this.state.url} path={this.props.match.path} approve={this.props.approve} loading={this.state.loading}/>
+            <IndexCom data={this.state.data} path={this.props.location.pathname} url={this.state.url} approve={this.props.approve} loading={this.state.loading}/>
         )
     }
 }

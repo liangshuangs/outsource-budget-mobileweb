@@ -84,7 +84,7 @@ class Container extends React.Component {
 
     render() {
         return (
-            <IndexCom data={this.state.data} url={this.state.url} path={this.props.location.pathname} approve={this.props.approve} loading={this.state.loading}/>
+            <IndexCom data={this.state.data} path={this.props.location.pathname} url={this.state.url} approve={this.props.approve} loading={this.state.loading}/>
         )
     }
 }

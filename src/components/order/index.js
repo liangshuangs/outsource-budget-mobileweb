@@ -70,9 +70,10 @@ export default class Component extends React.Component {
         })
     }
     render() {
-        const {data,path} = this.props
+        let data = this.props.data
         let columns = []
         let navTitle = []
+        let path = this.props.path
         if (path === '/order' ||path === '/') {
             navTitle = orderNav
             columns = this.state.selectIndex === '基本信息' ? orderBaseColumns : orderPayInfoColumns

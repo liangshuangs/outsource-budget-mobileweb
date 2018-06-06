@@ -18,18 +18,34 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/order/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
             <state relative-caret-position="-122">
               <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
               <folding />
+=======
+            <state relative-caret-position="225">
+              <caret line="84" column="16" lean-forward="true" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+              <folding>
+                <element signature="e#46#71#0" expanded="true" />
+              </folding>
+>>>>>>> 重改
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/apply/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
               <caret line="72" column="38" lean-forward="false" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+=======
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/budget/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="105" column="56" lean-forward="true" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
+>>>>>>> 重改
               <folding />
             </state>
           </provider>
@@ -38,8 +54,13 @@
       <file leaf-file-name="apply.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/apply.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
             <state relative-caret-position="437">
               <caret line="87" column="91" lean-forward="false" selection-start-line="87" selection-start-column="91" selection-end-line="87" selection-end-column="91" />
+=======
+            <state relative-caret-position="294">
+              <caret line="80" column="80" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="80" />
+>>>>>>> 重改
               <folding>
                 <element signature="e#46#72#0" expanded="true" />
               </folding>
@@ -47,6 +68,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
       <file leaf-file-name="budget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/budget.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,11 +77,20 @@
               <folding>
                 <element signature="e#46#71#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="apply.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/apply.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+              <folding />
+>>>>>>> 重改
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
         <entry file="file://$PROJECT_DIR$/src/components/budget/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1380">
@@ -99,6 +130,13 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/src/components/apply/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="89" column="33" lean-forward="false" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+              <folding />
+>>>>>>> 重改
             </state>
           </provider>
         </entry>
@@ -106,8 +144,13 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
             <state relative-caret-position="225">
               <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+=======
+            <state relative-caret-position="240">
+              <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+>>>>>>> 重改
               <folding>
                 <element signature="e#45#71#0" expanded="true" />
               </folding>
@@ -204,11 +247,17 @@
         <option value="$PROJECT_DIR$/src/assets/css/normalize.css" />
         <option value="$PROJECT_DIR$/src/components/applyOrderPro/teamClass.js" />
         <option value="$PROJECT_DIR$/src/assets/css/restyle.css" />
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+=======
+        <option value="$PROJECT_DIR$/src/containers/order.js" />
+        <option value="$PROJECT_DIR$/src/action/order.js" />
+>>>>>>> 重改
         <option value="$PROJECT_DIR$/src/http/http.js" />
         <option value="$PROJECT_DIR$/src/reducers/order.js" />
         <option value="$PROJECT_DIR$/src/components/common/item.js" />
         <option value="$PROJECT_DIR$/src/components/common/columns.js" />
         <option value="$PROJECT_DIR$/src/components/order/payInfo.scss" />
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/config/env.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
@@ -222,6 +271,19 @@
         <option value="$PROJECT_DIR$/src/containers/apply.js" />
         <option value="$PROJECT_DIR$/src/components/apply/index.js" />
         <option value="$PROJECT_DIR$/src/components/order/index.js" />
+=======
+        <option value="$PROJECT_DIR$/src/components/index/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/config/env.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/index.js" />
+        <option value="$PROJECT_DIR$/src/components/order/index.js" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/components/apply/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/apply.js" />
+        <option value="$PROJECT_DIR$/src/containers/budget.js" />
+        <option value="$PROJECT_DIR$/src/components/budget/index.js" />
+>>>>>>> 重改
       </list>
     </option>
   </component>
@@ -237,6 +299,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+=======
+    <option name="x" value="133" />
+>>>>>>> 重改
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="720" />
@@ -256,6 +322,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+=======
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 重改
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,13 +368,51 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="router" />
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outsource-budget-mobileweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outsource-budget-mobileweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outsource-budget-mobileweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outsource-budget-mobileweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+>>>>>>> 重改
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+>>>>>>> 重改
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,11 +589,18 @@
       <workItem from="1528164253803" duration="20122000" />
       <workItem from="1528202441568" duration="4005000" />
       <workItem from="1528249272949" duration="2114000" />
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
       <workItem from="1528265582505" duration="2063000" />
+=======
+      <workItem from="1528274130570" duration="44000" />
+      <workItem from="1528274186477" duration="50000" />
+      <workItem from="1528274275855" duration="1748000" />
+>>>>>>> 重改
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
     <option name="totallyTimeSpent" value="160916000" />
   </component>
   <component name="ToolWindowManager">
@@ -499,6 +615,22 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2660842" sideWeight="0.34210527" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3089701" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="160177000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="133" y="23" width="1280" height="720" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29864973" sideWeight="0.6411483" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30564785" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29864973" sideWeight="0.35885167" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3089701" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 重改
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -669,6 +801,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="444" column="8" lean-forward="false" selection-start-line="444" selection-start-column="8" selection-end-line="444" selection-end-column="8" />
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
         </state>
       </provider>
     </entry>
@@ -684,51 +817,105 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+>>>>>>> 重改
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="289">
+          <caret line="89" column="29" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="29" />
+>>>>>>> 重改
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+=======
+        <state relative-caret-position="30">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpackDevServer.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> 重改
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="61" column="83" lean-forward="false" selection-start-line="61" selection-start-column="83" selection-end-line="61" selection-end-column="83" />
+=======
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 重改
           <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+    <entry file="file://$PROJECT_DIR$/src/config/env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="61" />
+=======
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="83" lean-forward="false" selection-start-line="61" selection-start-column="83" selection-end-line="61" selection-end-column="109" />
+>>>>>>> 重改
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/build/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/env.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="585">
+          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+>>>>>>> 重改
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
     <entry file="file://$PROJECT_DIR$/src/action/order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="962">
@@ -741,28 +928,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+>>>>>>> 重改
           <folding>
             <element signature="e#45#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
     <entry file="file://$PROJECT_DIR$/src/containers/order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/order/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+>>>>>>> 重改
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
         <state relative-caret-position="915">
           <caret line="70" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+=======
+        <state relative-caret-position="130">
+          <caret line="74" column="12" lean-forward="false" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+>>>>>>> 重改
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
     <entry file="file://$PROJECT_DIR$/src/containers/budget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -770,11 +976,19 @@
           <folding>
             <element signature="e#46#71#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/apply/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="89" column="33" lean-forward="false" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+          <folding />
+>>>>>>> 重改
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/apply.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
         <state relative-caret-position="437">
           <caret line="87" column="91" lean-forward="false" selection-start-line="87" selection-start-column="91" selection-end-line="87" selection-end-column="91" />
           <folding>
@@ -795,16 +1009,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
           <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+=======
+        <state relative-caret-position="60">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="80" column="80" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="80" />
+          <folding>
+            <element signature="e#46#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/budget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="84" column="16" lean-forward="true" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+>>>>>>> 重改
           <folding>
             <element signature="e#46#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< 86572ee2cf0e6b9ef4110d36a93c00d9f90088bc
     <entry file="file://$PROJECT_DIR$/src/components/order/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-122">
           <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/budget/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="105" column="56" lean-forward="true" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
+>>>>>>> 重改
           <folding />
         </state>
       </provider>

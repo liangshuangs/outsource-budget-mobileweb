@@ -3,7 +3,8 @@
  */
 import React from "react";
 import { connect } from 'react-redux'
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { bindActionCreators } from 'redux';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 import Order from '../containers/order'
 import Budget from '../containers/budget'
@@ -20,5 +21,4 @@ const Root = () => (
         </Switch>
     </Router>
 );
-
-export default connect(null,null)(Root);
+export default connect(null, null)(Root)
