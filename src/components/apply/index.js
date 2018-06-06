@@ -70,18 +70,12 @@ export default class Component extends React.Component {
         })
     }
     render() {
-        let data = this.props.data
+        const {data,path} = this.props
         let columns = []
         let navTitle = []
-        let path = window.location.pathname
-
-        if (path === '/order' ||path === '/') {
-            navTitle = orderNav
-            columns = this.state.selectIndex === '基本信息' ? orderBaseColumns : orderPayInfoColumns
-        }
-        if (path === '/applypro' || path === '/applynopro') {
+        if (path === '/apply/pro' || path === '/apply/nopro') {
             navTitle = applyProNav
-            if (path === '/applypro') {
+            if (path === '/apply/pro') {
                 if (this.state.selectIndex === '基本信息') {
                     columns =  OrderProBaseColumns
                 }
@@ -92,7 +86,7 @@ export default class Component extends React.Component {
                     columns =  orderProTechColumns
                 }
             }
-            if (path === '/applynopro') {
+            if (path === '/apply/nopro') {
                 if (this.state.selectIndex === '基本信息') {
                     columns =  OrderNoProBaseColumns
                 }

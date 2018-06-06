@@ -82,7 +82,7 @@ class BudgetCom extends React.Component {
     }
     render() {
         return (
-            <Budget data={this.state.data} url={this.state.url} approve={this.props.approve} loading={this.state.loading}/>
+            <Budget data={this.state.data} path={this.props.location.pathname} url={this.state.url} approve={this.props.approve} loading={this.state.loading}/>
 
         )
     }

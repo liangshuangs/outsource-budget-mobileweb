@@ -4,7 +4,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
-import IndexCom from '../components/index/index'
+import IndexCom from '../components/order/index'
 import {getOrderInfo,getApplayProInfo,getApplayNoProInfo,getUserInfo,getUrl,approve} from '../action/order'
 import '../assets/css/normalize.css'
 import '../assets/css/restyle.css'
@@ -36,10 +36,12 @@ class Container extends React.Component {
         }
     }
     componentWillMount() {
+        let path = this.props.match.path
         let applicationId = ''
         let targetTaskId = ''
         let postUrl = this.props.getOrderInfo
         let quarms = window.location.search
+        console.log(quarms)
         if (quarms && quarms.includes('?') && quarms.includes('&')) {
             let quarmsArr = quarms.split("?")[1].split("&")
             quarmsArr.map(item=>{
@@ -52,7 +54,6 @@ class Container extends React.Component {
                 }
             })
         }
-        let path = window.location.pathname
         if (path === '/order' ||path === '/') {
             postUrl = this.props.getOrderInfo
         }
@@ -87,7 +88,7 @@ class Container extends React.Component {
 
     render() {
         return (
-            <IndexCom data={this.state.data} url={this.state.url} approve={this.props.approve} loading={this.state.loading}/>
+            <IndexCom data={this.state.data} url={this.state.url} path={this.props.match.path} approve={this.props.approve} loading={this.state.loading}/>
         )
     }
 }

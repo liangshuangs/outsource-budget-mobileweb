@@ -88,7 +88,6 @@ export function getBudgetServerTime() {
 }
 // 获取预算详情
 export function getBudgetInfo(params) {
-    console.log(params)
     return {
         [httpApi]: {
             url: `/BudgetNew/budget/mobileHttp_queryAuditInfo?${params}`,

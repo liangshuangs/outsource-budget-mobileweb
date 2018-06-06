@@ -7,7 +7,8 @@ import Footer from '../footer/footer'
 import Nav from '../nav/tag'
 import Modal from '../modal/modal'
 import Item from '../common/item'
-import {orderBaseColumns,orderPayInfoColumns} from '../common/columns'
+import {applyProNav,orderNav} from '../common/navTitle'
+import {orderBaseColumns,orderPayInfoColumns,OrderProBaseColumns,orderProClass1Columns,orderProClass2Columns,orderProTechColumns,OrderNoProBaseColumns} from '../common/columns'
 
 export default class Component extends React.Component {
     constructor(props) {
@@ -49,6 +50,7 @@ export default class Component extends React.Component {
             }
         }else {
             console.log('获取URL失败')
+            return
         }
 
         acceptBtnUrlPrams = `${acceptBtnUrlPrams}&rejectReason=${options}`
@@ -68,21 +70,29 @@ export default class Component extends React.Component {
         })
     }
     render() {
-        let data = this.props.data
-        const navTitle = ['基本信息','技术合作支付信息']
-        const columns = this.state.selectIndex === '基本信息' ? orderBaseColumns : orderPayInfoColumns
+        const {data,path} = this.props
+        let columns = []
+        let navTitle = []
+        if (path === '/order' ||path === '/') {
+            navTitle = orderNav
+            columns = this.state.selectIndex === '基本信息' ? orderBaseColumns : orderPayInfoColumns
+        }
         return (
             <div className="wrap index clearfix">
-               <Header title="技术合作订单" />
+                <Header title="技术合作订单" />
                 <Nav title = {navTitle} handleClick={this.handleNavClick}/>
                 <div className="main">
                     <div className="body scroll f-bt">
-                        { data.length > 0 ?
-                        <div>
-                            <Item data = {data}  columns = {columns}/>
-                        </div>
-                        : null
+                        {
+                            this.props.loading ?
+                                <div className="loading">loading</div>
+                                :  (data.length > 0 ?
+                                <div>
+                                    <Item data = {data[0]}  columns = {columns}/>
+                                </div>
+                                : null)
                         }
+
                     </div>
                     {
                         this.state.modalFlag ?

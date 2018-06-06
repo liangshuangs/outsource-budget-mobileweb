@@ -91,7 +91,7 @@ export default class Component extends React.Component {
 
     render() {
         let headerTitle = ''
-        let path = window.location.pathname
+        let path = this.props.path
         let data = this.props.data
         let columns = budgetApplyColumns
         if (path === '/budget/change') {
