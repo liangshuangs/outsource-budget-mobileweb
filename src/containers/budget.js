@@ -59,7 +59,7 @@ class BudgetCom extends React.Component {
             if (serverTime){
                 let key = serverTime + 'BudgetNew' + 'djk*3k@-3_31'
                 key = md5(key)
-                let params = `key=${key}&projectId=168066`
+                let params = `key=${key}&projectId=${projectId}`
                 this.props.getBudgetInfo(params).then(res=>{
                     this.setState({
                         data:res.response

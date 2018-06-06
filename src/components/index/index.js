@@ -50,6 +50,7 @@ export default class Component extends React.Component {
             }
         }else {
             console.log('获取URL失败')
+            return
         }
 
         acceptBtnUrlPrams = `${acceptBtnUrlPrams}&rejectReason=${options}`

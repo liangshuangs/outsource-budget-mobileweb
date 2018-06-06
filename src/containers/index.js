@@ -66,7 +66,6 @@ class Container extends React.Component {
         postUrl(applicationId).then((res)=>{
             if (res && res.response && res.response[0].success === true) {
                 let dataList = JSON.parse(res.response[0].data)
-                console.log(dataList)
                 this.setState({
                     data:dataList
                 })

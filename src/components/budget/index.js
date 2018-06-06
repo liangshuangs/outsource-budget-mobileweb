@@ -45,7 +45,6 @@ export default class Component extends React.Component {
         })
     }
     hidden = (key) => {
-        console.log('hidden',key)
         let keyshow = `show${key}`
         this.setState(prevState=>(
             {
