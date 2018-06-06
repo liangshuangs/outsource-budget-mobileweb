@@ -41,7 +41,6 @@ class Container extends React.Component {
         let targetTaskId = ''
         let postUrl = this.props.getOrderInfo
         let quarms = window.location.search
-        console.log(quarms)
         if (quarms && quarms.includes('?') && quarms.includes('&')) {
             let quarmsArr = quarms.split("?")[1].split("&")
             quarmsArr.map(item=>{
