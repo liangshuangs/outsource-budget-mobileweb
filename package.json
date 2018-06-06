@@ -59,9 +59,9 @@
     "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
-    "start": "cross-env PORT=8800 REACT_APP_ENV=development PUBLIC_URL=/mobileapps/ai-outsource-budget-mobile node scripts/start.js",
-    "build": "cross-env REACT_APP_ENV=production PUBLIC_URL=/mobileapps/ai-outsource-budget-mobile node scripts/build.js",
-    "test": "cross-env REACT_APP_ENV=test PUBLIC_URL=/mobileapps/ai-outsource-budget-mobile node scripts/build.js"
+    "start": "cross-env PORT=8800 REACT_APP_ENV=development PUBLIC_URL=/mobileapps/ai-outsource-budget-mobileweb node scripts/start.js",
+    "build": "cross-env REACT_APP_ENV=production PUBLIC_URL=/mobileapps/ai-outsource-budget-mobileweb node scripts/build.js",
+    "test": "cross-env REACT_APP_ENV=test PUBLIC_URL=/mobileapps/ai-outsource-budget-mobileweb node scripts/build.js"
   },
   "jest": {
     "collectCoverageFrom": [

@@ -7,21 +7,21 @@ function env() {
         // 开发
         return {
             ENV:'development',
-            ROOT_PATH:'/mobileapps/ai-outsource-budget-mobile',
+            ROOT_PATH:'/mobileapps/ai-outsource-budget-mobileweb',
             GATEWAY:'https://xin-sandbox.asiainfo.com:16020',
         }
     }else if (env === 'test') {
         // 测试
         return {
             ENV:'test',
-            ROOT_PATH:'/mobileapps/ai-outsource-budget-mobile',
+            ROOT_PATH:'/mobileapps/ai-outsource-budget-mobileweb',
             GATEWAY:'https://xin-sandbox.asiainfo.com:16020',
         }
     }else{
         // 生产 process.env.REACT_APP_ENV === 'production'
         return {
             ENV:'production',
-            ROOT_PATH:'/mobileapps/ai-outsource-budget-mobile',
+            ROOT_PATH:'/mobileapps/ai-outsource-budget-mobileweb',
             GATEWAY:'https://xin-sandbox.asiainfo.com:16020',
         }
     }
