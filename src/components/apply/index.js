@@ -7,6 +7,7 @@ import Footer from '../footer/footer'
 import Nav from '../nav/tag'
 import Modal from '../modal/modal'
 import Item from '../common/item'
+import goBackApp from '../../utils/goBack'
 import {applyProNav,orderNav} from '../common/navTitle'
 import {orderBaseColumns,orderPayInfoColumns,OrderProBaseColumns,orderProClass1Columns,orderProClass2Columns,orderProTechColumns,OrderNoProBaseColumns} from '../common/columns'
 
@@ -36,6 +37,7 @@ export default class Component extends React.Component {
         let param = this._geturlPram(type)
         this.props.approve(param)
         this.cancel()
+        goBackApp()
     }
     _geturlPram = (type) => {
         let options = this.state.modalInfo ? this.state.modalInfo : ''

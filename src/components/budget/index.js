@@ -6,6 +6,7 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import Modal from '../modal/modal'
 import Item from '../common/item'
+import goBackApp from '../../utils/goBack'
 import {
     budgetApplyColumns,
     budgetchangeColumns
@@ -62,6 +63,7 @@ export default class Component extends React.Component {
         let param = this._geturlPram(type)
         this.props.approve(param)
         this.cancel()
+        goBackApp()
     }
     _geturlPram = (type) => {
         let options = this.state.modalInfo ? this.state.modalInfo : ''
