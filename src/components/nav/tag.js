@@ -23,8 +23,11 @@ export default class TagCom extends React.Component{
             <ul className="nav">
                 {
                     title.map((item,index)=>{
+                        if (item === '合作种类、成本、利润') {
+                            console.log(item)
+                        }
                         return (
-                            <li key={index} className={this.state.selectIndex === index ? "nav-active" : ''} onClick={()=>this.changeItem(index,item)}>{item}</li>
+                            <li key={index} style={{flex:item === '合作种类、成本、利润' ? 2 : 1}} className={this.state.selectIndex === index ? "nav-active" : ''} onClick={()=>this.changeItem(index,item)}>{item}</li>
                         )
                     })
                 }

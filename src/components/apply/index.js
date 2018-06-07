@@ -72,12 +72,15 @@ export default class Component extends React.Component {
         })
     }
     render() {
+        let palceHolder = this.state.type === '同意' ? '请输入审批意见，如无意见请按确定' : '请输入驳回意见，如无意见请按确定'
         const {data,path} = this.props
+        let title= '技术合作申请单-项目类'
         let columns = []
         let navTitle = []
         if (path === '/apply/pro' || path === '/apply/nopro') {
             navTitle = applyProNav
             if (path === '/apply/pro') {
+                title='技术合作申请单-项目类'
                 if (this.state.selectIndex === '基本信息') {
                     columns =  OrderProBaseColumns
                 }
@@ -89,8 +92,10 @@ export default class Component extends React.Component {
                 }
             }
             if (path === '/apply/nopro') {
+                title = '技术合作申请单-非项目类'
                 if (this.state.selectIndex === '基本信息') {
                     columns =  OrderNoProBaseColumns
+
                 }
                 if (this.state.selectIndex === '合作种类、成本、利润') {
                     columns =  data[0]&&data[0].technicalCooperationParent === '2' ? orderProClass2Columns : orderProClass1Columns
@@ -102,7 +107,7 @@ export default class Component extends React.Component {
         }
         return (
             <div className="wrap index clearfix">
-                <Header title="技术合作订单" />
+                <Header title={title} />
                 <Nav title = {navTitle} handleClick={this.handleNavClick}/>
                 <div className="main">
                     <div className="body scroll f-bt">
@@ -122,7 +127,7 @@ export default class Component extends React.Component {
                             <Modal>
                                 <div className="modal-panel">
                                     <div className="modal-body">
-                                        <textarea className="modal-info modal-text" placeholder="请输入审批意见，如无意见请按确定" onChange={(e)=>this.changetText(e)}>
+                                        <textarea className="modal-info modal-text" placeholder={palceHolder} onChange={(e)=>this.changetText(e)}>
                                         </textarea>
                                     </div>
                                     <div className="modal-footer">
