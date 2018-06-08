@@ -72,6 +72,7 @@ export default class Component extends React.Component {
         })
     }
     render() {
+        let showBtn = this.props.url[0] && this.props.url[0].isShowBtn
         let palceHolder = this.state.type === '同意' ? '请输入审批意见，如无意见请按确定' : '请输入驳回意见，如无意见请按确定'
         const {data,path} = this.props
         let title= '技术合作申请单-项目类'
@@ -106,6 +107,7 @@ export default class Component extends React.Component {
             }
         }
         return (
+
             <div className="wrap index clearfix">
                 <Header title={title} />
                 <Nav title = {navTitle} handleClick={this.handleNavClick}/>
@@ -137,7 +139,11 @@ export default class Component extends React.Component {
                                 </div>
                             </Modal> : null
                     }
-                    <Footer confirmClick={this.handleConfrimClick}/>
+                    {
+                        showBtn ?
+                            <Footer confirmClick={this.handleConfrimClick}/>
+                            : null
+                    }
                 </div>
             </div>
         )

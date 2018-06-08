@@ -92,6 +92,7 @@ export default class Component extends React.Component {
     }
 
     render() {
+        let showBtn = this.props.url[0] && this.props.url[0].isShowBtn
         let headerTitle = ''
         let path = this.props.path
         let data = this.props.data
@@ -148,7 +149,11 @@ export default class Component extends React.Component {
                             </Modal> : null
                     }
 
-                    <Footer confirmClick={this.handleConfrimClick}/>
+                    {
+                        showBtn ?
+                            <Footer confirmClick={this.handleConfrimClick}/>
+                            : null
+                    }
                 </div>
             </div>
 

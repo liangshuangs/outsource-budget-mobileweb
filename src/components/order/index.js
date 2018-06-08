@@ -72,6 +72,7 @@ export default class Component extends React.Component {
         })
     }
     render() {
+        let showBtn = this.props.url[0] && this.props.url[0].isShowBtn
         let data = this.props.data
         let columns = []
         let navTitle = []
@@ -112,7 +113,12 @@ export default class Component extends React.Component {
                                 </div>
                             </Modal> : null
                     }
-                    <Footer confirmClick={this.handleConfrimClick}/>
+                    {
+                        showBtn ?
+                            <Footer confirmClick={this.handleConfrimClick}/>
+                            : null
+                    }
+
                 </div>
             </div>
         )
